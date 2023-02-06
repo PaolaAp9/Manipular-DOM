@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/icon.png"/>
+    <title>Personagem</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+    
+    
+</head>
+<body>
+    <main>
+        <section class="personagem">
+            <img class="perso" src="img/persona.png" alt="Persona" id="personagem" >
+            <figcaption class="titulo">Persona <br>RPG</figcaption>
+        </section>
+
+        <section class="box estatisticas">
+            <div class="estatistica">
+                <p class="estatistica-titulo">Ataque</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="ataque">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Velocidade</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="velocidade">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Magia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="magia">0</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Defesa</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="defesa">0</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="habilidades">
+            <form action="" class="montador">
+                <div class="box montador-conteudo">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Força</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="forca">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="forca">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Destreza</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="destreza">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="destreza">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Constituição</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="constituicao">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="constituicao">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Inteligência</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="inteligencia">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="inteligencia">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Sabedoria</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="sabedoria">-</buttom>
+                            <input type="text" class="controle-contador" value="00" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="sabedoria">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Carisma</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-habilidade="carisma">-</buttom>
+                            <input type="text" class="controle-contador" value="00" id="carisma" data-contador>
+                            <buttom class="controle-ajuste" data-controle="+" data-habilidade="carisma">+</buttom>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Calcular" class="criar" id="criar">
+            </form>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
